@@ -6,10 +6,12 @@ import MediaDetail from './media-detail/media-detail-view';
 
 export const App = () => (
     <Router>
-        <Switch>
-            <Route exact path="/" component={DashboardView} />
-            <Route path="/mediaDetail/:mediaType/:id" component={MediaDetail} />
-        </Switch>
+        <div>
+            <Switch>
+                <Route exact path="/" component={DashboardView} />
+                <Route path="/mediaDetail/:mediaType/:id" component={MediaDetail} />
+            </Switch>
+        </div>
     </Router>
 )
 
